@@ -1,0 +1,97 @@
+.testimonial {
+    position: relative;
+    margin: 80px auto 0;
+    height: 100%;
+    overflow: hidden;
+
+    &__list {   
+        padding: 10% 0 5%;
+        list-style-type: none;
+        z-index: 2;
+
+        .testimonial-item {
+            background-color: rgba($white-color, 0.3);
+            box-shadow: 0 0 10px rgba($black-color, 0.1);
+            width: 48%;
+            padding: 30px;
+            height: 160px;
+            margin: 0 auto 20px;
+            border-radius: 100px;
+
+            @include responsive(Mobile) {
+                width: 280px;
+                height: 280px;
+            }
+
+            @include responsive(Tablet) {
+                width: 80%;
+            }
+
+            .testimonial-shape {
+                position: relative;
+                float: left;
+                width: 100px;
+                height: 100px;
+                clip-path: circle(50% at 50% 50%);
+                shape-outside: circle(50% at 50% 50%);
+                margin-right: 24px;
+                
+                &__img {
+                    width: 100px;
+                    object-fit: cover;
+                    height: 100px;
+                }
+
+                &:hover .testimonial-shape__img {
+                    filter: blur(1px) brightness(50%);
+                    transform: scale(1.1);
+                }
+        
+                &__member-name {
+                    position: absolute;
+                    font-size: 1.4rem;  
+                    color: $white-color;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    transition: top .2s linear, transform .2s linear;
+                }
+
+                &:hover .testimonial-shape__member-name {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+    
+            .testimonial-text {
+                padding-right: 40px;
+
+                @include responsive(MobileTablet) {
+                    padding-right: 0px;
+                }
+
+                &__title {
+                    font-size: 1.4rem;
+                    color: $text-color;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+
+                &__desc {
+                    font-size: 1.2rem;
+                    color: $text-color;
+                    margin-top: 1rem;
+                }
+            }
+    
+        }
+    }
+
+    .testimonial__btn {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>SASS</title>
+</head>
+<body>
+    <div id="main">
+
+        <header class="header" style="background-image: linear-gradient(to right bottom, rgba(142, 158, 252, .8), rgba(28, 62, 255, .8)), 
+            url(./assets/img/humangroups3.jpg)">
+            <div class="header__logo-box">
+                <img src="./assets/img/logooutline.png" alt="" class="header-logo">
+            </div>
+            <div class="header__text-box">
+                <h3 class="header-main-title">selftaught</h3>
+                <p class="header-sub-title">is how you survive</p>
+                <div class="header-btn">
+                    <a href="" class="btn btn--animated btn--white">see our courses</a> 
+                </div>
+            </div>
+        </header>
+
+        <div class="menu">
+            <input type="checkbox" id="menu-check-box" class="menu__check-box"></input>
+            <label for="menu-check-box" class="menu__btn">
+                <div class="menu-btn-icon"></div>
+            </label>
+
+            <div class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">our skills</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">our courses</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">testimonials</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">enroll form</a></li>
+                </ul>
+            </div>
+
+            <div class="menu__bg">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="about">
+                <h2 class="content-heading">
+                    Story about us
+                </h2>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="about__text-box">
+                                <h3 class="about-text-heading">from zero to hero</h3>
+                                <p class="about-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                <h3 class="about-text-heading">master your skill</h3>
+                                <p class="about-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="about-text-detail btn-text" href="">Learn more &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="about__img-box">
+                                <img src="./assets/img/humangroups1.jpg" alt="" class="about-img about-img--1">
+                                <img src="./assets/img/humangroups2.jpg" alt="" class="about-img about-img--2">
+                                <img src="./assets/img/humangroups3.jpg" alt="" class="about-img about-img--3">
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="skill" style="background-image: linear-gradient(to right bottom, rgba(142, 158, 252, .8), rgba(28, 62, 255, .8)), 
+            url(./assets/img/humangroups3.jpg)">
+                <ul class="skill__list row">
+
+                    <li class="col l-3 m-6 c-12">
+                        <div class="skill-item">
+                            <i class="skill-item__icon fas fa-globe-americas"></i>
+                            <h4 class="skill-item__title">global skill</h4>
+                            <p class="skill-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </li>
+                    <li class="col l-3 m-6 c-12">
+                        <div class="skill-item">
+                            <i class="skill-item__icon fas fa-book-open"></i>
+                            <h4 class="skill-item__title">google's knowledge</h4>
+                            <p class="skill-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </li>
+                    <li class="col l-3 m-6 c-12">
+                        <div class="skill-item">
+                            <i class="skill-item__icon fas fa-users"></i>
+                            <h4 class="skill-item__title">leader of your life</h4>
+                            <p class="skill-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </li>
+                    <li class="col l-3 m-6 c-12">
+                        <div class="skill-item">
+                            <i class="skill-item__icon fas fa-hourglass-half"></i>
+                            <h4 class="skill-item__title">saving your time</h4>
+                            <p class="skill-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="course">
+                <h2 class="content-heading">our courses</h2>
+                <ul class="course__list row">
+                    <li class="col l-4 m-12 c-12">
+                        <div class="course-item">
+                            <div class="course-card course-card--front">
+                                <div class="course-card__picture course-card__picture--1" 
+                                style="background-image: linear-gradient(to right, rgba(142, 158, 252, 1), rgba(28, 62, 255, 1)), url(./assets/img/humangroups3.jpg)">
+                                </div>
+                                <h3 class="course-card__title">
+                                    <span class="course-card__title-text course-card__title-text--1">control <br> your time</span>
+                                </h3>
+                                <div class="course-card-content">
+                                    <div class="course-card-content__item">3 hours</div>
+                                    <div class="course-card-content__item">1000 students</div>
+                                    <div class="course-card-content__item">5 star rated</div>
+                                </div>
+                            </div>
+                            <div class="course-card course-card--back">
+                                <div class="course-card-back course-card-back--1">
+                                    <div class="course-card-back__only">only</div>
+                                    <div class="course-card-back__price">$16</div>
+                                    <div class="course-card-back__enroll">
+                                        <a href="" class="course-enroll-btn btn btn--white">enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-4 m-12 c-12">
+                        <div class="course-item">
+                            <div class="course-card course-card--front">
+                                <div class="course-card__picture course-card__picture--2"
+                                style="background-image: linear-gradient(to right, rgba(255, 185, 0, 1), rgba(255, 119, 48, 1)), url(./assets/img/humangroups3.jpg);">
+                                </div>
+                                <h3 class="course-card__title">
+                                    <span class="course-card__title-text course-card__title-text--2">make <br> mindmap</span>
+                                </h3>
+                                <div class="course-card-content">
+                                    <div class="course-card-content__item">10 hours</div>
+                                    <div class="course-card-content__item">5000 students</div>
+                                    <div class="course-card-content__item">5 star rated</div>
+                                </div>
+                            </div>
+                            <div class="course-card course-card--back">
+                                <div class="course-card-back course-card-back--2">
+                                    <div class="course-card-back__only">only</div>
+                                    <div class="course-card-back__price">$16</div>
+                                    <div class="course-card-back__enroll">
+                                        <a href="" class="course-enroll-btn btn btn--white">enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-4 m-12 c-12">
+                        <div class="course-item">
+                            <div class="course-card course-card--front">
+                                <div class="course-card__picture course-card__picture--3"
+                                style="background-image: linear-gradient(to right, rgba(85, 197, 122, 1), rgba(40, 180, 133, 1)), url(./assets/img/humangroups3.jpg);">
+                                </div>
+                                <h3 class="course-card__title">
+                                    <span class="course-card__title-text course-card__title-text--3">make <br> your target</span>
+                                </h3>
+                                <div class="course-card-content">
+                                    <div class="course-card-content__item">15 hours</div>
+                                    <div class="course-card-content__item">5000 students</div>
+                                    <div class="course-card-content__item">5 star rated</div>
+                                </div>
+                            </div>
+                            <div class="course-card course-card--back">
+                                <div class="course-card-back course-card-back--3">
+                                    <div class="course-card-back__only">only</div>
+                                    <div class="course-card-back__price">$16</div>
+                                    <div class="course-card-back__enroll">
+                                        <a href="" class="course-enroll-btn btn btn--white">enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="course__see-all">
+                    <a href="" class="course-btn btn btn--animated btn--primary">see all our courses</a>
+                </div>
+            </div>
+            <div class="testimonial">
+                <h2 class="content-heading" style="margin-top: 60px">testimonials</h2>
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="./assets/videos/Boulevard.mp4" type="video/mp4">
+                        Can't load video.
+                    </video>
+                </div>
+                <ul class="testimonial__list">
+                    <li class="testimonial-item">
+                        <figure class="testimonial-shape">
+                            <img src="./assets/img/person1.jpg" alt="" class="testimonial-shape__img">
+                            <figcaption class="testimonial-shape__member-name">
+                                Lorem ipsum
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h4 class="testimonial-text__title">thank for your guide</h4>
+                            <p class="testimonial-text__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="testimonial-item">
+                        <figure class="testimonial-shape">
+                            <img src="./assets/img/person2.jpg" alt="" class="testimonial-shape__img">
+                            <figcaption class="testimonial-shape__member-name">
+                                Lorem ipsum
+                            </figcaption>
+                        </figure>
+                        <div class="testimonial-text">
+                            <h4 class="testimonial-text__title">very helpful courses</h4>
+                            <p class="testimonial-text__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sodales rhoncus. Mauris metus orci, mattis vel congue vel, pharetra a quam. Cras maximus mattis mi, sit amet porta velit dignissim id. Nullam ac facilisis orci. Mauris pulvinar nulla in eros dictum, in faucibus lacus mollis.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="testimonial__btn btn-text">read all the testimonials &rarr;</div>
+            </div>
+            <div class="enroll">
+                <div class="enroll-wrapper">
+                    <div class="enroll-section" 
+                    style="background-image: radial-gradient(125% 175% ellipse at 0%, rgba(255, 255, 255, .8) 50%, transparent 50%), url(./assets/img/humangroups3.jpg);">
+                        <h2 class="enroll__heading content-heading">enroll now</h2>
+                        <form action="" class="enroll__form">
+                            <div class="enroll-text">
+                                <input type="text" name="" id="" placeholder="Full name">
+                                <label for="">Full name</label>
+                            </div>
+                            <div class="enroll-text">
+                                <input type="email" name="" id="" placeholder="Email">
+                                <label for="">Email</label>
+                            </div>
+                            <div class="enroll-radio">
+                                <div class="enroll-radio-group">
+                                    <input type="radio" name="gender" id="male">
+                                    <label for="male">
+                                        <div class="enroll-radio-btn"></div>
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="enroll-radio-group">
+                                    <input type="radio" name="gender" id="female">
+                                    <label for="female">
+                                        <div class="enroll-radio-btn"></div>
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="enroll__btn btn btn--primary">submit &rarr;</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <img src="./assets/img/logopng.jpg" alt="" class="footer__logo">
+            <h3 class="content-heading">self taught</h3>
+            <div class="grid wide">    
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="footer__section">
+                            <ul class="footer__list">
+                                <li class="footer__item heading-content">
+                                    <a class="content-heading footer__link" href="">address</a>
+                                </li>
+                                <li class="footer__item heading-content">
+                                    <a class="content-heading footer__link" href="">contacts</a>
+                                </li>
+                                <li class="footer__item heading-content">
+                                    <a class="content-heading footer__link" href="">policy</a>
+                                </li>
+                                <li class="footer__item heading-content">
+                                    <a class="content-heading footer__link" href="">sponsor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col l-6 m-6 c-12">
+                        <div class="footer__section">
+                            <div class="footer__copyright">
+                                Copyright by Selftaught Team. You are 100% allowed to use this webpages for both personal and commercial use, but NOT to claim it as your personal design.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

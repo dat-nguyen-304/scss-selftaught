@@ -1,0 +1,19 @@
+@import './Content/about';
+@import './Content/course';
+@import './Content/skill';
+@import './Content/testimonials';
+@import './Content/enroll';
+
+.content {
+    position: relative;
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -200px;
+        left: 0;
+        right: 0;
+        background-color: #eee;
+        z-index: -999;
+    }
+}

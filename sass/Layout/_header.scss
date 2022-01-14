@@ -1,0 +1,85 @@
+.header {
+    position: relative;
+    background-size: cover;
+    background-position: center; 
+    height: 96vh;
+    clip-path: ellipse(75% 75% at 50% 25%); 
+    /*https://bennettfeely.com/clippy/*/
+    user-select: none;
+
+    @include responsive(MobileTablet) {
+        height: 50vh;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        .header-logo {
+            height: 70px;
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+
+        .header-main-title {
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4.2rem;
+            line-height: 4.2rem;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 12px;
+            animation: moveToRight 1s linear;
+            @include responsive(Mobile) {
+                font-size: 3rem;
+                top: 30%;
+            }
+        }
+
+        .header-sub-title {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: 300;
+            letter-spacing: 12px;
+            color: #fff;
+            animation: moveToLeft 1s linear;
+            text-align: center; 
+
+            @include responsive(MobileTablet) {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+                width: 100%;
+                top: 40%;
+            }
+
+            @include responsive(Tablet) {
+                top: 46%;
+            }
+
+        }
+
+        .header-btn {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+
+            @include responsive(Tablet) {
+                top: 54%;
+            }
+        }
+    }
+
+}

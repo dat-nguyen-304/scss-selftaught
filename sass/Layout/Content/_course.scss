@@ -1,0 +1,183 @@
+.course {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 0;
+    &__list {
+        margin-top: 60px;
+        .col {
+            padding: 0 32px;
+        }
+        .course-item {
+            position: relative;
+            perspective: 100rem;
+            height: 36rem;
+
+            @include responsive(Mobile) {
+                margin-bottom: 12px;
+                width: 80%;
+                margin: 12px auto 12px;
+            }
+
+            @include responsive(Tablet) {
+                margin-bottom: 12px;
+                width: 40%;
+                margin: 24px auto;
+            }
+
+            .course-card {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                backface-visibility: hidden; // không hiện mặt sau, áp dụng khi xoay
+                height: 36rem;
+                box-shadow: 0 0 10px rgba($black-color, .1);
+                border-radius: 2rem;
+                overflow: hidden;
+                transition: transform .8s ease;  
+                &--front {
+                    transform: rotateY(0);
+                }
+
+                &__picture {
+                    background-blend-mode: screen; // trộn màu linear-gradient với hình ảnh khi ko sử dụng rgba
+                    height: 60%;
+                    clip-path: ellipse(80% 70% at 50% 30%);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &__title {
+                    position: absolute;
+                    top: 12rem;
+                    right: 1rem;
+                    font-size: 2rem;
+                    line-height: 3.6rem;
+                    font-weight: 300;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: $white-color;
+                    &-text {
+                        -webkit-box-decoration-break: clone; // dùng để kiểm soát lề viền của block bị cắt do xuống dòng
+                        padding: 4px 12px;
+                        border-radius: 5rem;
+                        &--1 { 
+                            background-image: linear-gradient(to left top, 
+                                rgba($dark-primary-color, .85), 
+                                rgba($light-primary-color, .85));
+                        }
+                        &--2 { 
+                            background-image: linear-gradient(to left top, 
+                                rgba($dark-secondary-color, .85), 
+                                rgba($light-secondary-color, .85));
+                        }
+                        &--3 { 
+                            background-image: linear-gradient(to left top, 
+                                rgba($dark-tertiary-color, .85),  
+                                rgba($light-tertiary-color, .85));
+                        }
+                    }
+                    
+                }
+
+                &-content {
+                    padding-top: 20px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: $text-color;
+                    &__item {
+                        width: 60%;
+                        margin: 0 auto;
+                        padding: 8px 0;
+                    }
+                    &__item:not(:first-child) {
+                        border-top: 1px solid #ccc;
+                    }
+
+                }
+        
+                &--back {
+                    transform: rotateY(-180deg);
+                }
+
+                &-back {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: $white-color;
+                    text-align: center;
+                    text-transform: uppercase;
+
+
+                    &--1 { 
+                        background-image: linear-gradient(to left top, 
+                            rgba($dark-primary-color, .85), 
+                            rgba($light-primary-color, .85));
+                    }
+                    &--2 { 
+                        background-image: linear-gradient(to left top, 
+                            rgba($dark-secondary-color, .85), 
+                            rgba($light-secondary-color, .85));
+                    }
+                    &--3 { 
+                        background-image: linear-gradient(to left top, 
+                            rgba($dark-tertiary-color, .85),  
+                            rgba($light-tertiary-color, .85));
+                    }
+
+                    &__only {
+                        display: block;
+                        position: absolute;
+                        top: 10%;
+                        left: 0;
+                        right: 0;
+                        font-size: 1.2rem;
+                        font-weight: 100;
+                    }
+
+                    &__price {
+                        display: block;
+                        position: absolute;
+                        font-size: 4.8rem;
+                        font-weight: 100;
+                        top: 38%;
+                        left: 0;
+                        right: 0;
+                    }
+
+                    &__enroll {
+                        position: absolute;
+                        top: 64%;
+                        width: 100%;
+
+                        .course-enroll-btn {
+                            width: 162px;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .course-item:hover .course-card--front {
+            transform: rotateY(180deg);
+        }
+
+        .course-item:hover .course-card--back {
+            transform: rotateY(0);
+        }
+        
+    }
+
+    &__see-all {
+        margin-top: 40px;
+        .course-btn {
+            width: 240px;
+            text-transform: uppercase;
+        }
+    }
+}

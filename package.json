@@ -1,0 +1,15 @@
+{
+  "name": "nodesass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss": "node-sass sass/main.scss assets/css/style.css -w"
+  },
+  "author": "clearlove",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

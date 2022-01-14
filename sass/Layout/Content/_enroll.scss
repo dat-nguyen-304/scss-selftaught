@@ -1,0 +1,185 @@
+.enroll {
+    background-image: linear-gradient(to right, rgba($medium-primary-color, .8), rgba($light-primary-color, .8));
+
+    &-wrapper {
+        padding: 100px 0;
+    }
+
+    &-section {
+        border-radius: 20px;
+        width: 54%;
+        height: 400px;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        // background-image: radial-gradient(125% 175% ellipse at 0%, rgba(255, 255, 255, .8) 50%, transparent 50%), url(../../../assets/img/humangroups3.jpg);
+
+        @include responsive(Mobile) {
+            width: 80%;
+            height: 280px;
+            background-image: radial-gradient(175% 200% ellipse at 0%, rgba($white-color, .8) 50%, transparent 50%),
+            url(../../../assets/img/humangroups3.jpg) !important;
+        }
+
+        @include responsive(Tablet) {
+            width: 80%;
+            background-image: radial-gradient(150% 200% ellipse at 0%, rgba($white-color, .8) 50%, transparent 50%),
+            url(../../../assets/img/humangroups3.jpg) !important;
+            height: 320px;
+        }
+
+    }
+
+    &__heading {
+        display: inline-block;
+        margin-left: 24px;
+        margin-top: 36px;
+        width: auto;
+
+        @include responsive(Mobile) {
+            margin-left: 12px;
+            margin-top: 16px;
+        }
+
+        @include responsive(Tablet) {
+            margin-left: 18px;
+            margin-top: 24px;
+        }
+    }
+
+    &__heading:hover {
+        transform: skewY(5deg) scale(1.1) ;
+        text-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &__form {
+        margin-top: 40px;
+        padding-left: 40px;
+
+        @include responsive(MobileTablet) {
+            margin-top: 0;
+            padding-left: 16px;  
+        }
+    }
+
+    &-text {
+        margin-top: 16px;
+
+        @include responsive(MobileTablet) {
+            margin-top: 8px; 
+        }
+        label {
+            display: block; 
+            color: $text-color;
+            margin: 4px 0 0 8px;
+            visibility: visible;
+        }
+
+        input {
+            background-color: rgba($white-color, .9);
+            border: none;
+            outline: none;
+            padding: 10px 12px;
+            font-size: 1.2rem;
+            width: 54%;
+            color: $text-color;
+
+            @include responsive(Mobile) {
+                width: 80%;
+            }
+
+            @include responsive(Tablet) {
+                width: 60%;
+            }
+        }
+
+        input:placeholder-shown + label{
+            visibility: hidden;
+        }
+
+        input:invalid:focus {
+            display: block;
+            content: "";
+            border-bottom: 2px solid red;
+        }
+
+        input:valid:focus {
+            display: block;
+            content: "";
+            border-bottom: 2px solid green;
+        }
+    }
+
+    &-radio {
+        margin-top: 20px;
+        position: relative;
+
+        @include responsive(MobileTablet) {
+            margin-top: 12px;
+        }
+
+        &-group {
+            display: inline-block;
+            margin-right: 80px;
+
+            @include responsive(MobileTablet) {
+                margin-right: 40px;
+            }
+        }
+
+        input {
+            opacity: 0;
+        }
+
+        label {
+            position: relative;
+            display: inline-block;
+            font-size: 1.2rem;
+            color: $text-color;
+            padding-left: 32px;
+        }
+
+        &-btn {
+            position: absolute;
+            top: -4px;
+            left: 0px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $dark-primary-color;
+            border-radius: 10rem;
+        }
+
+        &-btn::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 10rem;
+            background-color: $dark-primary-color;
+            visibility: hidden;
+        }
+        
+        input:checked + label .enroll-radio-btn::after {
+            visibility: visible;
+        }
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-left: 0;
+
+        @include responsive(Mobile) {
+            margin-top: 12px;
+        }
+
+        @include responsive(Tablet) {
+            margin-top: 24px;
+        }
+    }
+}
