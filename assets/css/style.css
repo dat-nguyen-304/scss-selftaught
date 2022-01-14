@@ -1024,11 +1024,11 @@ html {
       .enroll-section {
         width: 80%;
         height: 280px;
-        background-image: radial-gradient(175% 200% ellipse at 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../../assets/img/humangroups3.jpg) !important; } }
+        background-image: radial-gradient(175% 200% ellipse at 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../assets/img/humangroups3.jpg) !important; } }
     @media (min-width: 740px) and (max-width: 1023px) {
       .enroll-section {
         width: 80%;
-        background-image: radial-gradient(150% 200% ellipse at 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../../assets/img/humangroups3.jpg) !important;
+        background-image: radial-gradient(150% 200% ellipse at 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../assets/img/humangroups3.jpg) !important;
         height: 320px; } }
   .enroll__heading {
     display: inline-block;

@@ -18,13 +18,13 @@
             width: 80%;
             height: 280px;
             background-image: radial-gradient(175% 200% ellipse at 0%, rgba($white-color, .8) 50%, transparent 50%),
-            url(../../../assets/img/humangroups3.jpg) !important;
+            url(../../assets/img/humangroups3.jpg) !important;
         }
 
         @include responsive(Tablet) {
             width: 80%;
             background-image: radial-gradient(150% 200% ellipse at 0%, rgba($white-color, .8) 50%, transparent 50%),
-            url(../../../assets/img/humangroups3.jpg) !important;
+            url(../../assets/img/humangroups3.jpg) !important;
             height: 320px;
         }
 
