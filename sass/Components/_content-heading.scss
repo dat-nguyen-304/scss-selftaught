@@ -8,7 +8,7 @@
     color: transparent;
     letter-spacing: 1.2rem;
     margin: 12px auto;
-    -webkit-background-clip: text;  
+    -webkit-background-clip: text;
     // đổ backgound-image vào text
     text-transform: uppercase;
     background-image: linear-gradient(to right, rgba($dark-primary-color, .9), rgba($medium-primary-color, .1));
@@ -17,7 +17,7 @@
     z-index: 999;
 
     &:hover {
-        transform: skewY(5deg) scale(1.1) ;
+        transform: skewY(5deg) scale(1.1);
         text-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
     }
 

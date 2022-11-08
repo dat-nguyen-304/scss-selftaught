@@ -33,7 +33,8 @@
                 width: 100px;
                 height: 100px;
                 clip-path: circle(50% at 50% 50%);
-                shape-outside: circle(50% at 50% 50%);
+                shape-outside: circle(50% at 50% 50%); //dùng để tạo hình dạng cho phần tử, khi đó các phần tử được float lên sẽ 
+                    //bao quanh theo hình dáng phần tử đó
                 margin-right: 24px;
                 
                 &__img {
